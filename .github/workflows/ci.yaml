@@ -1,0 +1,15 @@
+steps:
+  - uses: actions/checkout@v4        # скачивает твой репозиторий в виртуалку
+
+  - uses: actions/setup-python@v5
+    with:
+      python-version: '3.12'
+
+  - name: Install uv
+    run: curl -LsSf https://astral.sh/uv/install.sh | sh
+
+  - name: Install dependencies
+    run: uv sync
+
+  - name: Run tests
+    run: uv run pytest tests -v
