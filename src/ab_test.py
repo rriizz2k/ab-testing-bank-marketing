@@ -6,4 +6,4 @@ def compare_conversion(success_a, nobs_a, success_b, nobs_b):
     return pval
 
 
-print(compare_conversion(50, 500, 52, 500))
+#print(compare_conversion(50, 500, 52, 500))

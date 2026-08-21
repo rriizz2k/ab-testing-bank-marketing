@@ -1,7 +1,7 @@
 import pandas as pd
 
-def load_data():
+def reformat_data():
     df = pd.read_csv('data/bank-additional-full.csv', sep=';')
     df.to_csv('data/bank.csv', index=False)
 
-load_data()
+reformat_data()

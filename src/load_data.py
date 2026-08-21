@@ -1,5 +1,7 @@
 import pandas as pd
 
-def load_data():
-    df = pd.read_csv('data.csv')
+def load_data(path):
+    df = pd.read_csv(path)
     return df
+
+#load_data()
